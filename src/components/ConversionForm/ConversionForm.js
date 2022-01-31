@@ -67,6 +67,20 @@ class ConversionForm extends Component {
     );
   };
 
+  handleSwap = e => {
+    const fromCurrency = this.state.fromCurrency;
+    const toCurrency = this.state.toCurrency;
+    e.preventDefault();
+    this.setState(
+      {
+        toCurrency: fromCurrency,
+        fromCurrency: toCurrency,
+        result: null
+      },
+      this.calculate
+    );
+  };
+
   render() {
     const { currencies, amount, result, fromCurrency, toCurrency } = this.state;
 
@@ -104,9 +118,9 @@ class ConversionForm extends Component {
                 </form>
 
                 <div className='form-inline'>
-                  <h1 className="swap word-wrap-normal">
+                  <Button onClick={this.handleSwap} className="swap word-wrap-normal">
                     &#8595;&#8593;
-                  </h1>
+                  </Button>
                 </div>
 
                 <form className="form-inline mb-4">
