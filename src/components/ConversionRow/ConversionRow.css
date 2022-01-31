@@ -1,0 +1,17 @@
+.conversion-row {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input {
+    border-radius: 7px;
+    padding: .25rem;
+    width: 10em;
+}
+
+select {
+    margin-left: .5rem;
+}

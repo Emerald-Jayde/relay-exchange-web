@@ -1,0 +1,17 @@
+.header-container {
+    background-color: #243342;
+    min-height: 9vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    position: sticky;
+    padding: 15px 50px;
+  }
+
+.relay-logo {
+    height: 38px;
+}

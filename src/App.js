@@ -1,15 +1,17 @@
 import React from 'react';
-import './App.css';
+
+import Header from './components/Header/Header'
+import ConversionForm from './components/ConversionForm/ConversionForm'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Currency Converter
-      </p>
-      <header className="App-header">
-        <i>Conversion component goes here</i>
-      </header>
+    <div>
+      <Header />
+      <div className="container my-5">
+        <h1>Currency Converter</h1>
+        <ConversionForm />
+      </div>
     </div>
   );
 }
