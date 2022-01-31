@@ -31,8 +31,8 @@ class ConversionForm extends Component {
   };
 
   calculate = () => {
+    this.getCurrencies();
     const { currencies, amount, fromCurrency, toCurrency } = this.state;
-    console.log(this.state)
 
     if (amount === isNaN) {
       return;
